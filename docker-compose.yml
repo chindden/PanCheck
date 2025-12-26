@@ -1,8 +1,6 @@
 services:
   pancheck:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: lampon/pancheck:latest
     container_name: pancheck
     ports:
       - "6080:6080"
@@ -72,5 +70,3 @@ volumes:
   redis-data:
   mysql_data:
     driver: local
-
-
